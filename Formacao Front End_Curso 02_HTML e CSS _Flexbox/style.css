@@ -33,6 +33,10 @@ span {
     border: 1px solid #22D4FD;
     padding: 3px;
 }
+span:hover {
+    animation: pulse 1s ease-in-out infinite alternate;
+
+}
 
 .destaque {
     color: #22D4FD;
@@ -50,6 +54,9 @@ span {
 
 .apresentacao__conteudo {
     width: 615px;
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
 
 }
 
@@ -65,11 +72,14 @@ span {
 .apresentacao__links {
     display: flex;
    justify-content: space-between;
-   
+   align-items: center;  
+   gap: 32px; 
     
 }
 .links_modelo {
     background-color: #22D4FD;
+    display: flex;
+    justify-content: center;
     width: 280px;
     text-align: center;
     border-radius: 16px;
@@ -80,13 +90,18 @@ span {
     color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
-img{
+.links_modelo:hover {
+          color:#70F06D;
+    }
+
+
+.apresentacao__imagem {  
     border-radius: 50%;
     box-shadow: 0px 0px 20px 5px #70F06D;
     
 }
  
-img:hover{
+.apresentacao__imagem:hover {
     animation: pulse 1s ease-in-out infinite alternate;
 }
 
@@ -98,5 +113,8 @@ img:hover{
     to {
         box-shadow: 0px 0px 20px 10px #70F06D;
         transform: scale(1.3);
-    }
+    } 
 }
+ 
+
+    
