@@ -1,5 +1,12 @@
 
+*{
+     margin:0;
+     padding:0;
+}
+
+
 body {
+    height: 100vh;
     background-color: black;
     color: #70F06D;
 }
@@ -17,11 +24,13 @@ button {
     border: none;
     
 }
-strong {
-    color: #22D4FD;
-}
+
 span{
     color: #22D4FD;
     border: 1px solid #22D4FD;
     padding: 10px;
+}
+
+.destaque{
+    color: #22D4FD;
 }
